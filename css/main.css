@@ -3,6 +3,8 @@
     margin:0;
     padding:0;
   }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 footer{
     position: absolute;
@@ -13,3 +15,80 @@ footer{
     text-align: center;
     bottom:0px;
   }
+body{
+  background: url(../images/bg-desktop.svg) no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  max-height: 100vh;
+  max-width: 100vw;
+  background-size:cover;
+  color:white;
+}
+.logo{
+  padding:50px 60px;
+}
+.mockups{
+  padding: 0 0 0 60px;
+}
+.mockups>img{
+  width: 100%;
+}
+.writeup{
+  font-size: 20px;
+  padding:80px 50px; 
+  font-family: 'Open Sans', sans-serif;
+}
+.writeup>h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size:3em;
+}
+.writeup>button{
+  border-radius: 30px;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0px 5px 25px rgba(0,0,0,0.5);
+  border:0;
+  padding:15px 100px;
+}
+.socials{
+  
+  padding:0px 80px; 
+}
+.socials>.icon{
+  border:1px solid white;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  border-radius: 100%;
+}
+.socials>.icon:hover{
+  cursor: pointer;;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+@media(max-width:1000px){
+  .logo{
+    padding:10px 20px;
+  }
+  .mockups{
+    padding: 10px 20px;
+  }
+  .writeup{
+    font-size: 15px;
+    padding:10px 40px;
+    text-align: center; 
+  }
+  .writeup>h1{
+    font-weight: 400;
+    font-size: 2em;
+  }
+  .writeup>p{
+    font-size: 15px;
+  }
+  .socials{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+}
